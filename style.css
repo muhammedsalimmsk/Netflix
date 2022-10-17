@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Netflix Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+img{
+    max-width: 100%;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 26px 56px;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+
+
+}
+header a.logo{
+    display: block;
+}
+a.logo svg{
+    fill: #e50914;
+    height: 37px;
+}
+header div+div{
+    text-align: right;
+}
+header a.button{
+    display: inline-block;
+ background-color: #e50914;
+ color: #fff;
+ text-decoration: none;
+ padding: 7px 17px;
+ border-radius: 3px;
+
+}
+header select{
+    background:transparent;
+    color: #fff;
+    padding: 7px 0 6px 20px;
+    border-radius: 3px;
+    
+
+}
+header div.select{
+    display: inline-block;
+    margin-right: 30px;
+
+}
+header div.select svg{
+    height: 20px;
+    color: #fff;
+    position: absolute;
+    margin-top: 5px; 
+    margin-left: 4px;
+}
+div.splash {
+    position: relative;
+
+}
+div.splash div.backround img{
+    max-width: 100%;
+    opacity: 0.6;
+
+}
+div.splash div.gradient{
+   background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 40%,transparent 75%,rgba(0,0,0,.8));
+   position: absolute;
+   inset: 0;
+   background: rgba(0,0,0,.4);
+   background-color: rgba(0, 0, 0, 0.4);
+}
+div.splash div.content{
+    position: absolute;
+    inset: 0;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    max-width: 655px;
+    margin-left: -327.5px;
+    left: 50%;
+  
+}
+div.splash h1, div.splash h3, div.splash h4{
+    font-weight: normal;
+}
+div.splash h1{
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+div.splash h3{
+    font-size: 1.625rem;
+    margin-top: 13px;
+    margin-bottom: 29px;
+}
+div.splash h4{
+    font-size: 1.2rem;
+}
+div.splash form{
+    position: relative;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr max-content;
+}
+div.splash input{
+   padding: 15px 10px ; 
+   font-size: 1.2rem;
+   width: 100%;
+}
+div.splash input ~ span{
+    position: absolute;
+    left: 10px;
+    top: 18px;
+    z-index: 3;
+    color: #aaa;
+    transition: font .1s ease,top .1s ease,transform .1s ease;
+    pointer-events: none;
+}
+div.splash input:focus{
+    padding-top: 19px;
+    padding-bottom: 11px;
+
+}
+div.splash input:focus ~ span{
+    top: 4px;
+    font-size: .8rem;
+}
+div.splash button{
+    font-size: 1.625rem;
+    padding: 13px 26px;
+    background-color: #e50914;
+    color: #fff;
+    border: 0;
+
+
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 46px;
+    padding: 70px 35px;
+    align-items: center;
+    border-top: 5px solid #222;
+
+}
+section.last{
+    border-bottom: 5px solid #222;
+}
+section div.texts h1{
+    font-size: 3.125rem;
+    margin-bottom: 8px;
+}
+section div.texts p{
+    font-size: 1.625rem;
+}
+.media{
+    position: relative;
+}
+.media.s1 img{
+    width: 400px;
+}
+.media.s1 video{
+    width:293px ;
+    position: absolute;
+    top: 62px;
+    left: 52px;
+}
+section:nth-child(even) div.texts{
+    order: 2;
+}
+section div.download{
+    border: 2px solid #666;
+    border-radius: 15px;
+    padding: 10px;
+    height: 95px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 270px;
+    left: 50%;
+    margin-left: -135px;
+    gap: 15px;
+    background-color: #000;
+    grid-template-columns: max-content 1fr max-content;
+}
+section div.download img{
+    height: 75px;
+    width: auto;
+
+}
+.media.s3 img{
+    width: 400px;
+    position: relative;
+    z-index: 5;
+
+}
+.media.s3 video{
+    width: 250px;
+    position: absolute;
+    top: 36px;
+    left: 72px;
+}
+div.faq{
+    padding: 70px 30px;
+
+}
+div.faq h1{
+    font-size: 3.125rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+div.question{
+    max-width: 635px;
+    margin:0 auto;
+    font-size: 1.625rem;
+}
+div.question{
+    position: relative;
+    background-color: #303030;
+    margin-bottom: 10px;
+}
+div.question svg{
+    width: 30px;
+    height: 30px;
+    right: 30px;
+    top: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: all 0.2s ease;
+}
+div.question .header{
+    display: block;
+    padding: 20px 30px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+
+}
+div.question div.answer{
+    padding:0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+div.question input[type="checkbox"]{
+    display: none;
+}
+div.question input[type="checkbox"]:checked ~ div.answer{
+    padding: 30px 30px;
+    max-height: 600px;
+}
+div.question input[type="checked"]:checked ~ .header svg{
+  transform:rotate(180deg)
+}
+div.final div.content::after{
+    border-top: 5px solid #222;
+}
